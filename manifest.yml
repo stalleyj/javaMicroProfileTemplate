@@ -1,6 +1,5 @@
 ---
 applications:
-- instances: 1
   timeout: 180
   name: [PROJ_NAME_PLACEHOLDER]
   buildpack: liberty-for-java

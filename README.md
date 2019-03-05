@@ -58,7 +58,7 @@ The context root is set in the `src/main/webapp/WEB-INF/ibm-web-ext.xml` file. T
 ### Notices
 
 This project was generated using:
-* generator-ibm-java v5.13.7
-* generator-ibm-service-enablement v3.1.2
-* generator-ibm-cloud-enablement v1.5.4
+* generator-ibm-java v5.14.1
+* generator-ibm-service-enablement v3.2.1
+* generator-ibm-cloud-enablement v1.7.7
 * generator-ibm-java-liberty v

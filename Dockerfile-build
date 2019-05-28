@@ -27,7 +27,7 @@ RUN set -eux; \
          ;; \
     esac; \
     apt-get update \
-    && apt-get install -y --no-install-recommends unzip wget openssl \
+    && apt-get install -y --no-install-recommends wget openssl \
     && rm -rf /var/lib/apt/lists/*; \
     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/"; \
     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE}; \
@@ -52,7 +52,6 @@ RUN set -eux; \
     tar xf $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C $HOME/mvn &&\
     mv $HOME/mvn/apache-maven-${MAVEN_VERSION} $HOME/mvn/apache-maven &&\
     rm -f $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz; \
-    apt-get purge --auto-remove -y unzip; \
     apt-get purge --auto-remove -y wget; \
     rm -rf /var/lib/apt/lists/*;
 
